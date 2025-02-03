@@ -25,6 +25,8 @@ export async function POST(
   })
   if (transcribed) {
     console.log('🟢 Transcribed')
+    return NextResponse.json({ status: 200 })
+
     const options = {
       method: 'POST',
       url: process.env.VOICEFLOW_KNOWLEDGE_BASE_API,

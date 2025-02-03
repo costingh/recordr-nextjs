@@ -14,11 +14,11 @@ const LandingPageNavBar = (props: Props) => {
         <Menu className="w-8 h-8" />
         <Image
           alt="logo"
-          src="/opal-logo.svg"
+          src="/recordr-logo.svg"
           width={40}
           height={40}
         />
-        Opal
+        Recordr
       </div>
       <div className="hidden gap-x-10 items-center lg:flex">
         <Link
