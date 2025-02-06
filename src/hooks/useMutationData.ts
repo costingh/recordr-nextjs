@@ -21,7 +21,7 @@ export const useMutationData = (
       if (onSuccess) onSuccess()
 
       return toast(
-        data?.status === 200 || data?.status === 201 ? 'Success' : 'Error',
+        data?.status === 200 || data?.status === 201 || !data?.status ? 'Success' : 'Error',
         {
           description: data?.data,
         }

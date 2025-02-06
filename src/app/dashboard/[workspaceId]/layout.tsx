@@ -1,5 +1,5 @@
 import React from 'react'
-import { getNotifications, onAuthenticateUser } from '@/actions/user'
+import { getNotifications, getUserProfile, onAuthenticateUser } from '@/actions/user'
 import {
   getAllUserVideos,
   getWorkspaceFolders,
@@ -44,7 +44,10 @@ const Layout = async ({ params: { workspaceId }, children }: Props) => {
     queryFn: () => getNotifications(),
   })
 
-
+  await query.prefetchQuery({
+    queryKey: ['user-profile'],
+    queryFn: getUserProfile,
+  })
 
   return (
     <HydrationBoundary state={dehydrate(query)}>
