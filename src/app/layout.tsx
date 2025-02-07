@@ -9,6 +9,7 @@ import ReactQueryProvider from "@/react-query";
 import { ReduxProvider } from "@/redux/provider";
 import { Toaster } from "sonner";
 import Script from "next/script";
+import { Analytics } from "@vercel/analytics/react"
 
 const manrope = DM_Sans({ subsets: ["latin"] });
 
@@ -43,6 +44,7 @@ export default function RootLayout({
                 `}
 				</Script>
 				<body className={`${manrope.className} bg-[#171717]`}>
+					<Analytics/>
 					<ThemeProvider
 						attribute="class"
 						defaultTheme="dark"
