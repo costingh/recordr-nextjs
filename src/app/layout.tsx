@@ -43,7 +43,7 @@ export default function RootLayout({
                     });
                 `}
 				</Script>
-				<body className={`${manrope.className} bg-[#171717]`}>
+				<body className={`${manrope.className} bg-[#282a36]`}>
 					<Analytics/>
 					<ThemeProvider
 						attribute="class"
