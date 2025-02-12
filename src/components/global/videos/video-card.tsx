@@ -33,13 +33,13 @@ const VideoCard = (props: Props) => {
 	);
 
 	// <Loader
-	//   className="bg-[#171717] flex justify-center items-center border-[1px] border-[rgb(37,37,37)] rounded-xl"
+	//   className="bg-[#282a36] flex justify-center items-center border-[1px] border-[rgb(37,37,37)] rounded-xl"
 	//   state={props.processing}
 	// >
 	// </Loader>
 
 	return (
-		<div className=" group overflow-hidden cursor-pointer bg-[#171717] relative border-[1px] border-[#252525] flex flex-col rounded-xl">
+		<div className=" group overflow-hidden cursor-pointer  relative border-[1px] border-[#252525] flex flex-col rounded-xl">
 			<div className="absolute top-3 right-3 z-50 gap-x-3 hidden group-hover:flex">
 				<CardMenu
 					currentFolderName={props.Folder?.name}
