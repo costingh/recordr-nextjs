@@ -3,6 +3,34 @@
 @tailwind utilities;
 
 @layer base {
+  /* :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 3.9%;
+    --primary: 0 0% 9%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 0 0% 96.1%;
+    --secondary-foreground: 0 0% 9%;
+    --muted: 0 0% 96.1%;
+    --muted-foreground: 0 0% 45.1%;
+    --accent: 0 0% 96.1%;
+    --accent-foreground: 0 0% 9%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 89.8%;
+    --input: 0 0% 89.8%;
+    --ring: 0 0% 3.9%;
+    --radius: 0.75rem;
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+  } */
+
   :root {
     --background: 0 0% 100%;
     --foreground: 0 0% 3.9%;
@@ -29,9 +57,41 @@
     --chart-3: 197 37% 24%;
     --chart-4: 43 74% 66%;
     --chart-5: 27 87% 67%;
-  }
+    --rt-color-white: #fff;
+    --rt-color-dark: #222;
+    --rt-color-success: #8dc572;
+    --rt-color-error: #be6464;
+    --rt-color-warning: #f0ad4e;
+    --rt-color-info: #337ab7;
+    --rt-opacity: 0.9;
+}
 
   .dark {
+    /* --background: 0 0% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 0 0% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 0 0% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 0 0% 9%;
+    --secondary: 0 0% 14.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 0 0% 14.9%;
+    --muted-foreground: 0 0% 63.9%;
+    --accent: 0 0% 14.9%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 14.9%;
+    --input: 0 0% 14.9%;
+    --ring: 0 0% 83.1%;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%; */
+
     --background: 0 0% 3.9%;
     --foreground: 0 0% 98%;
     --card: 0 0% 3.9%;
@@ -56,6 +116,40 @@
     --chart-3: 30 80% 55%;
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%;
+    --pf: 43 100% 48%;
+    --sf: 271 46% 35%;
+    --af: 91 100% 26%;
+    --nf: 31 81% 3%;
+    --b2: 0 0% 6%;
+    --b3: 0 0% 0%;
+    --bc: 145 0% 81%;
+    --sc: 275 36% 88%;
+    --nc: 26 11% 80%;
+    --inc: 239 85% 93%;
+    --suc: 126 38% 89%;
+    --wac: 29 59% 11%;
+    --erc: 11 100% 91%;
+    --rounded-box: 1rem;
+    --rounded-btn: 0.5rem;
+    --rounded-badge: 1.9rem;
+    --animation-btn: 0.25s;
+    --animation-input: .2s;
+    --btn-text-case: uppercase;
+    --btn-focus-scale: 0.95;
+    --border-btn: 1px;
+    --tab-border: 1px;
+    --tab-radius: 0.5rem;
+    --p: 43 100% 55%;
+    --pc: 180 7% 8%;
+    --s: 271 46% 42%;
+    --a: 91 100% 33%;
+    --ac: 0 0% 0%;
+    --n: 31 81% 10%;
+    --b1: 0 0% 13%;
+    --in: 221 83% 53%;
+    --su: 142 76% 36%;
+    --wa: 32 95% 44%;
+    --er: 0 72% 51%;
   }
 }
 
@@ -99,4 +193,8 @@
     rgba(0, 0, 0, 0),
     rgba(23, 23, 23, 1)
   );
+}
+
+.text-base-content\/80 {
+  color: hsl(var(--bc) / .8);
 }
