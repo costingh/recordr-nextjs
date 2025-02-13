@@ -52,10 +52,10 @@ const Folders = ({ workspaceId }: Props) => {
 			<div className="flex items-center  justify-between">
 				<div className="flex items-center gap-4">
 					<FolderDuotone />
-					<h2 className="text-[#BDBDBD] text-xl"> Folders</h2>
+					<h2 className="text-gray-200 text-xl"> Folders</h2>
 				</div>
 				<div className="flex items-center gap-2">
-					<p className="text-[#BDBDBD]">See all</p>
+					<p className="text-gray-200">See all</p>
 					<ArrowRight color="#707070" />
 				</div>
 			</div>
