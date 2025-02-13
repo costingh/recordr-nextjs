@@ -8,35 +8,32 @@ const FAQ = () => {
             answer: (
                 <ul className="list-inside list-disc space-y-1 text-gray-300 text-[16px]">
                     <li>
-                        If you're just starting out, go with the free plan to explore the basics of recording but without AI transcription.
+                        For frequent usage and AI-powered features like summarization and title generation or if you're just starting out, go with the PRO plan.
                     </li>
                     <li>
-                        For frequent usage and AI-powered features like summarization and title generation, choose the Pro plan.
-                    </li>
-                    <li>
-                        For teams or businesses that need collaboration tools and advanced analytics, please contact us to discuss your needs.
+                        For teams or businesses that need collaboration tools and advanced analytics, please choose the BUSSINESS plan or contact us to discuss your needs.
                     </li>
                 </ul>
             ),
         },
-        {
-            question: "What happens if I exceed my recording limits?",
-            answer: (
-                <div className="text-gray-300 text-[16px]">
-                    <p>
-                        No worries! We'll notify you to upgrade your plan. If you don't upgrade within 7 days, access to new recordings will be paused, but you’ll retain your existing data.
-                    </p>
-                </div>
-            ),
-        },
-        {
-            question: "Is there a free trial?",
-            answer: (
-                <p className="text-gray-300 text-[16px]">
-                    Yes! You can try Recordr free with access to limited features—no credit card required.
-                </p>
-            ),
-        },
+        // {
+        //     question: "What happens if I exceed my recording limits?",
+        //     answer: (
+        //         <div className="text-gray-300 text-[16px]">
+        //             <p>
+        //                 No worries! We'll notify you to upgrade your plan. If you don't upgrade within 7 days, access to new recordings will be paused, but you’ll retain your existing data.
+        //             </p>
+        //         </div>
+        //     ),
+        // },
+        // {
+        //     question: "Is there a free trial?",
+        //     answer: (
+        //         <p className="text-gray-300 text-[16px]">
+        //             Yes! You can try Recordr free with access to limited features—no credit card required.
+        //         </p>
+        //     ),
+        // },
         {
             question: "Is Recordr GDPR compliant?",
             answer: (

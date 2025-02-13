@@ -10,7 +10,7 @@ function Footer() {
 				<div className="w-[30%] flex flex-col gap-5">
 					<Logo />
 					<p className="mt-3 text-[17px] text-base-content/80 leading-relaxed">
-						Ship your startup in days, not weeks
+						Supercharge your communication with Recordr
 						<br />
 						Copyright © 2025 - All rights reserved
 					</p>
@@ -27,13 +27,13 @@ function Footer() {
 							Support
 						</Link>
 						<Link
-							href="#"
+							href="#pricing"
 							className="text-[16px] link cursor-pointer transition-all hover:pl-1 font-[300] text-[#cfcfcf]"
 						>
 							Pricing
 						</Link>
 						<Link
-							href="#"
+							href="/dashboard"
 							className="text-[16px] link cursor-pointer transition-all hover:pl-1 font-[300] text-[#cfcfcf]"
 						>
 							Dashboard

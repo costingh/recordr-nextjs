@@ -14,10 +14,11 @@ function Logo() {
 					width={200}
 					height={35}
 					alt="Recordr Logo"
-					src="/recordr-logo.svg"
-					className="w-8"
+					// src="/recordr-logo.svg"
+					src="/images/logo.png"
+					className="w-[28px]"
 				/>
-				<span className="text-lg font-extrabold">Recordr</span>
+				<span className="text-lg font-[500]">Recordr</span>
 		</Link>
 	);
 }

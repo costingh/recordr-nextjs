@@ -16,7 +16,7 @@ const LandingPageNavBar = (props: Props) => {
 				aria-label="Global"
 			>
 				<div className="flex lg:flex-1">
-					<Logo/>
+					<Logo />
 				</div>
 
 				<div className="flex lg:hidden">
@@ -43,30 +43,45 @@ const LandingPageNavBar = (props: Props) => {
 				</div>
 
 				<div className="hidden lg:flex lg:items-center lg:justify-center lg:gap-12">
-					<a
+					<Link
 						className="link-hover link"
 						title="Pricing"
 						href="#pricing"
 					>
 						Pricing
-					</a>
-					<a className="link-hover link" title="FAQ" href="#faq">
+					</Link>
+					<Link className="link-hover link" title="FAQ" href="#faq">
 						FAQ
-					</a>
-					<a
+					</Link>
+					<Link
 						className="link-hover link"
-						title="Reviews"
-						href="#reviews"
+						title="Features"
+						href="#features"
 					>
-						Reviews
-					</a>
+						Features
+					</Link>
+					<Link
+						className="link-hover link"
+						title="Sign In"
+						href="/auth/sign-in"
+					>
+						Sign In
+					</Link>
 				</div>
 
-				<div className="hidden lg:flex lg:flex-1 lg:justify-end">
+				<div className="hidden lg:flex lg:flex-1 lg:justify-end gap-x-2">
+					
 					<div className="flex flex-col">
-						<Link href="/auth/sign-in">
-							<Button className="text-base flex gap-x-2">
-								Log in
+						{/* <Link href="/auth/sign-in"> */}
+							<Button className="text-base flex gap-x-2 text-white bg-transparent border-[1px] border-white hover:bg-transparent hover:opacity-[0.8] text-[400] text-[14px]">
+								Download Desktop App
+							</Button>
+						{/* </Link> */}
+					</div>
+					<div className="flex flex-col">
+						<Link href="mailto:gheorghecostin221@gmail.com">
+							<Button className="text-base flex gap-x-2 hover:bg-transparent border-[1px] border-[#8000ff] bg-[#8000ff] text-white  hover:text-[#8000ff] text-[400] text-[14px]">
+								Contact Sales
 							</Button>
 						</Link>
 					</div>
@@ -77,7 +92,7 @@ const LandingPageNavBar = (props: Props) => {
 			<div className="relative z-[99999] hidden" id="mobile-menu">
 				<div className="fixed inset-y-0 right-0 z-10 w-full origin-right transform overflow-y-auto bg-base-200 px-8 py-4 transition duration-300 ease-in-out sm:max-w-sm sm:ring-1 sm:ring-neutral/10">
 					<div className="flex items-center justify-between">
-						<a
+						<Link
 							className="flex shrink-0 items-center gap-2"
 							title="DataFast homepage"
 							href="/"
@@ -92,7 +107,7 @@ const LandingPageNavBar = (props: Props) => {
 							<span className="text-lg font-extrabold">
 								DataFast
 							</span>
-						</a>
+						</Link>
 						<button
 							type="button"
 							className="-m-2.5 rounded-md p-2.5"
@@ -118,27 +133,27 @@ const LandingPageNavBar = (props: Props) => {
 					<div className="mt-6 flow-root">
 						<div className="mb-4 border-b border-base-content/5 py-4">
 							<div className="flex flex-col items-start gap-y-4">
-								<a
+								<Link
 									className="link-hover link"
 									title="Pricing"
 									href="#pricing"
 								>
 									Pricing
-								</a>
-								<a
+								</Link>
+								<Link
 									className="link-hover link"
 									title="FAQ"
 									href="#faq"
 								>
 									FAQ
-								</a>
-								<a
+								</Link>
+								<Link
 									className="link-hover link"
 									title="Reviews"
 									href="#reviews"
 								>
 									Reviews
-								</a>
+								</Link>
 							</div>
 						</div>
 						<div className="flex flex-col">

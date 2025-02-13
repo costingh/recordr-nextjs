@@ -10,7 +10,7 @@ export const useSearch = (key: string, type: 'USERS') => {
     | {
         id: string
         subscription: {
-          plan: 'PRO' | 'FREE'
+          plan: 'PRO' | 'FREE' | 'BUSSINESS'
         } | null
         firstname: string | null
         lastname: string | null

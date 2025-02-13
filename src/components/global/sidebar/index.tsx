@@ -66,8 +66,8 @@ const Sidebar = ({ activeWorkspaceId }: Props) => {
 	}
 
 	const SidebarSection = (
-		<div className="bg-[#111111] flex-none relative p-4 h-full w-[250px] flex flex-col gap-4 items-center overflow-hidden">
-			<div className="bg-[#111111] p-4 flex gap-2 justify-start items-center mb-4 absolute top-0 left-0 right-0 ">
+		<div className="bg-[#222] flex-none relative p-4 h-full w-[250px] flex flex-col gap-4 items-center overflow-hidden">
+			<div className="bg-[#222] p-4 flex gap-2 justify-start items-center mb-4 absolute top-0 left-0 right-0 ">
 				<Image
 					src="/recordr-logo.svg"
 					height={30}
@@ -83,7 +83,7 @@ const Sidebar = ({ activeWorkspaceId }: Props) => {
 				<SelectTrigger className="mt-16 text-neutral-400 bg-transparent">
 					<SelectValue placeholder="Select a workspace"></SelectValue>
 				</SelectTrigger>
-				<SelectContent className="bg-[#111111] backdrop-blur-xl">
+				<SelectContent className="bg-[#222] backdrop-blur-xl">
 					<SelectGroup>
 						<SelectLabel>Workspaces</SelectLabel>
 						<Separator />
@@ -108,8 +108,9 @@ const Sidebar = ({ activeWorkspaceId }: Props) => {
 				</SelectContent>
 			</Select>
 			{currentWorkspace?.type === "PUBLIC" &&
-				workspace.subscription?.plan == "PRO" && (
-					<Modal
+				(workspace.subscription?.plan == "BUSSINESS" || workspace.subscription?.plan == "PRO") && (
+					<>
+					{workspace.subscription?.plan != "PRO" ? <Modal
 						trigger={
 							<span className="text-sm cursor-pointer flex items-center justify-center bg-neutral-800/90  hover:bg-neutral-800/60 w-full rounded-sm p-[5px] gap-2">
 								<PlusCircle
@@ -125,7 +126,8 @@ const Sidebar = ({ activeWorkspaceId }: Props) => {
 						description="Invite other users to your workspace"
 					>
 						<Search workspaceId={activeWorkspaceId} />
-					</Modal>
+					</Modal> : <p>Upgrade to BUSSINESS plan to invite team members</p>}
+					</>
 				)}
 			<p className="w-full text-[#9D9D9D] font-bold mt-4">Menu</p>
 			<nav className="w-full">
@@ -154,8 +156,8 @@ const Sidebar = ({ activeWorkspaceId }: Props) => {
 				workspace.members.length === 0 && (
 					<div className="w-full mt-[-10px]">
 						<p className="text-[#3c3c3c] font-medium text-sm">
-							{workspace.subscription?.plan === "FREE"
-								? "Upgrade to create workspaces"
+							{workspace.subscription?.plan === "FREE" || workspace.subscription?.plan === "BUSSINESS"
+								? "Upgrade to BUSSINESS plan to create workspaces"
 								: "No Workspaces"}
 						</p>
 					</div>
@@ -206,9 +208,9 @@ const Sidebar = ({ activeWorkspaceId }: Props) => {
 			<Separator className="w-4/5" />
 			{workspace.subscription?.plan === "FREE" && (
 				<GlobalCard
-					title="Upgrade to Pro"
-					description=" Unlock AI features like transcription, AI summary, and more."
-					footer={<PaymentButton />}
+					title="Upgrade to BUSSINESS"
+					description="Unlock workspaces and team collaboration."
+					footer={<PaymentButton planType='BUSSINESS' />}
 				/>
 			)}
 		</div>
