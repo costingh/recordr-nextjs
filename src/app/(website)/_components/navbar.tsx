@@ -62,10 +62,10 @@ const LandingPageNavBar = (props: Props) => {
 					</Link>
 					<Link
 						className="link-hover link"
-						title="Sign In"
-						href="/auth/sign-in"
+						title="Dashboard"
+						href="/dashboard"
 					>
-						Sign In
+						Dashboard
 					</Link>
 				</div>
 
@@ -97,16 +97,7 @@ const LandingPageNavBar = (props: Props) => {
 							title="DataFast homepage"
 							href="/"
 						>
-							<img
-								alt="DataFast logo"
-								width="32"
-								height="32"
-								className="w-8"
-								src="/_next/static/media/icon.3a869d3d.png"
-							/>
-							<span className="text-lg font-extrabold">
-								DataFast
-							</span>
+							<Logo/>
 						</Link>
 						<button
 							type="button"
@@ -157,10 +148,10 @@ const LandingPageNavBar = (props: Props) => {
 							</div>
 						</div>
 						<div className="flex flex-col">
-							<Link href="/auth/sign-in">
+							<Link href="/dashboard">
 								<Button className="text-base flex gap-x-2">
 									<User fill="#000" />
-									Log in
+									Dashboard
 								</Button>
 							</Link>
 						</div>

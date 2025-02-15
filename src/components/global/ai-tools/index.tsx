@@ -40,27 +40,23 @@ const AiTools = ({ plan, trial, videoId }: Props) => {
 						</p>
 					</div>
 
-					<div className="flex gap-4 w-full justify-end">
+					{/* <div className="flex gap-4 w-full justify-end">
 						<Button className=" mt-2 text-sm">
 							<Loader state={false} color="#000">
 								Try now
 							</Loader>
 						</Button>
-						{/* WIP: Pay button  */}
 						<Button className="mt-2 text-sm" variant={"secondary"}>
 							<Loader state={false} color="#000">
 								Pay Now
 							</Loader>
 						</Button>
-						{/* <Button className=" mt-2 text-sm">
-            <Loader
-              state={false}
-              color="#000"
-            >
-              Generate Now
-            </Loader>
-          </Button> */}
-					</div>
+						<Button className=" mt-2 text-sm">
+							<Loader state={false} color="#000">
+								Generate Now
+							</Loader>
+						</Button>
+					</div> */}
 				</div>
 				<div className=" border-[1px] rounded-xl p-4 gap-4 flex flex-col bg-[#1b0f1b7f] ">
 					<div className="flex items-center gap-2">
@@ -75,9 +71,9 @@ const AiTools = ({ plan, trial, videoId }: Props) => {
 							<Pencil color="#a22fe0" />
 						</div>
 						<div className="flex flex-col">
-							<h3 className="textmdg">Summary</h3>
+							<h3 className="textmdg">Transcript</h3>
 							<p className="text-muted-foreground text-sm">
-								Generate a description for your video using AI.
+								Generate video transcript
 							</p>
 						</div>
 					</div>
@@ -88,7 +84,8 @@ const AiTools = ({ plan, trial, videoId }: Props) => {
 						<div className="flex flex-col">
 							<h3 className="textmdg">Summary</h3>
 							<p className="text-muted-foreground text-sm">
-								Generate a description for your video using AI.
+								Generate a title & description for your video
+								using AI.
 							</p>
 						</div>
 					</div>

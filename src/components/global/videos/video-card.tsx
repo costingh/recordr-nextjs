@@ -6,7 +6,7 @@ import ChangeVideoLocation from "@/components/forms/change-video-location";
 import CopyLink from "./copy-link";
 import Link from "next/link";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { Dot, Share2, User } from "lucide-react";
+import { Dot, Share2, User, Youtube, YoutubeIcon } from "lucide-react";
 
 type Props = {
 	User: {
@@ -39,7 +39,7 @@ const VideoCard = (props: Props) => {
 	// </Loader>
 
 	return (
-		<div className=" group overflow-hidden cursor-pointer  relative border-[1px] border-[#252525] flex flex-col rounded-xl">
+		<div className=" group overflow-hidden cursor-pointer  relative border-[1px] border-gray-700 flex flex-col rounded-xl">
 			<div className="absolute top-3 right-3 z-50 gap-x-3 hidden group-hover:flex">
 				<CardMenu
 					currentFolderName={props.Folder?.name}
@@ -58,8 +58,10 @@ const VideoCard = (props: Props) => {
 			>
 				{props.processing ? (
 					<div
-						className="w-full aspect-video opacity-50 z-20 bg-gray-700"
+						className="w-full aspect-video opacity-50 z-20 bg-gray-700 flex items-center justify-center gap-2 flex-col"
 					>
+						<YoutubeIcon/>
+						<span className="text-gray-300 text-[13px] font-[400]">Video is being processed...</span>
 					</div>
 				) : (
 					<video

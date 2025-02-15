@@ -198,3 +198,7 @@
 .text-base-content\/80 {
   color: hsl(var(--bc) / .8);
 }
+
+canvas {
+  pointer-events: none; /* Ensures the mouse can interact with elements below */
+}

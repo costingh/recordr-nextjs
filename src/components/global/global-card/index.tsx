@@ -1,32 +1,34 @@
-import React from 'react'
+import React from "react";
 import {
-  Card,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from '@/components/ui/card'
+	Card,
+	CardDescription,
+	CardFooter,
+	CardHeader,
+	CardTitle,
+} from "@/components/ui/card";
 
 type Props = {
-  title: string
-  description: string
-  children?: React.ReactNode
-  footer?: React.ReactNode
-}
+	title: string;
+	description: string;
+	children?: React.ReactNode;
+	footer?: React.ReactNode;
+};
 
 const GlobalCard = ({ title, children, description, footer }: Props) => {
-  return (
-    <Card className="bg-transparent mt-4">
-      <CardHeader className="p-4">
-        <CardTitle className="text-md text-[#9D9D9D]">{title}</CardTitle>
-        <CardDescription className="text-[#707070]">
-          {description}
-        </CardDescription>
-      </CardHeader>
-      {children && <div className="p-4">{children}</div>}
-      {footer && <CardFooter className="p-4">{footer}</CardFooter>}
-    </Card>
-  )
-}
+	return (
+		<Card className="bg-transparent mt-4 border-[#70707061]">
+			<CardHeader className="p-4">
+				<CardTitle className="text-md text-[#9D9D9D]">
+					{title}
+				</CardTitle>
+				<CardDescription className="text-[#707070]">
+					{description}
+				</CardDescription>
+			</CardHeader>
+			{children && <div className="p-4">{children}</div>}
+			{footer && <CardFooter className="p-4">{footer}</CardFooter>}
+		</Card>
+	);
+};
 
-export default GlobalCard
+export default GlobalCard;

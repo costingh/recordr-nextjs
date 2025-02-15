@@ -155,7 +155,7 @@ const Sidebar = ({ activeWorkspaceId }: Props) => {
 			{workspace.workspace.length === 1 &&
 				workspace.members.length === 0 && (
 					<div className="w-full mt-[-10px]">
-						<p className="text-[#3c3c3c] font-medium text-sm">
+						<p className="text-[#707070] font-medium text-sm">
 							{workspace.subscription?.plan === "FREE" || workspace.subscription?.plan === "BUSSINESS"
 								? "Upgrade to BUSSINESS plan to create workspaces"
 								: "No Workspaces"}
